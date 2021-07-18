@@ -1,0 +1,9 @@
+# CREATED BY Windows Batch Util
+
+### DATA ###
+data/
+
+
+### LOG ###
+lib/*.log
+
