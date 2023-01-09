@@ -37,7 +37,8 @@ rem バッチメイン処理の記述
 rem 定数定義
 set "CURRENT_DIR=%~dp0"
 set "WK_DIR=%CURRENT_DIR%work"
-set "BATCH_NAME=バッチ機能名"
+set "BATCH_FUNC_NAME=バッチ機能名"
+set "BATCH_FILE_NAME=%~n0"
 
 rem 外部ファイル読み込み
 set "LIB_DIR=%CURRENT_DIR%lib"
@@ -110,7 +111,7 @@ if 1 EQU %ifnum% (
 rem ○フォルダ/ファイル存在確認
 rem if ［not］exist ＜パス名＞ ＜コマンド＞
 rem ※ファイルかフォルダかの区別はできない
-set ifpath="c:\"
+set ifpath="c:\\"
 rem set ifpath="c:\notfound"
 if exist %ifpath% (
   echo if演算子 フォルダ/ファイル存在確認 true
@@ -217,6 +218,12 @@ echo ##### ファイルリネーム
 echo ##### 指定フォルダ配下のファイルリネーム
 
 echo ##### テンプレ他にもあれば記載していく
+
+echo ##### echoで空行を差し込む方法
+echo "echoコマンドのあとに.をスペースを開けずに差し込む（記号ならなんでもよい）"
+echo.
+echo 空行差し込み
+echo.
 
 
 rem ************************************************************

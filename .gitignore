@@ -2,8 +2,11 @@
 
 ### DATA ###
 data/
-
+!data/memo/YYYYMMDD_TEMPLATE.md
 
 ### LOG ###
 lib/*.log
+
+### APP ###
+app/*/*.log
 
