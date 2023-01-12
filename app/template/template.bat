@@ -91,6 +91,7 @@ rem ■条件分岐 if演算子
 rem ○文字列比較
 rem if ［not］文字列1==文字列2 ＜コマンド＞
 rem ※文字列代入時にダブルクォーテーションで囲うと、ダブルクォーテーションも文字列として認識されてしまう
+rem AND/OR文字が利用できないので、入れ子で表現するしか無い
 set ifstr=hoge hoge
 if "hoge hoge"=="%ifstr%" (
   echo if演算子 文字列条件比較 true
