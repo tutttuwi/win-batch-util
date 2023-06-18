@@ -3,6 +3,7 @@
 ### DATA ###
 data/
 !data/memo/YYYYMMDD_TEMPLATE.md
+!data/sample/addhead_data/*
 
 ### LOG ###
 lib/*.log
